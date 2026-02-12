@@ -30,40 +30,60 @@
 
 ## 工作流程
 
+**遵循規範**：`handoff-protocol.md`、`revision-protocol.md`
+
 ```
 Phase 1: 企劃與研究
   → article-planner + article-researcher
+  交付物：內容企劃、完整大綱、研究資料包、用戶素材清單
+  ↓ (交接檢查)
 
 Phase 2: 撰文與編輯
   → article-writer + copywriter + article-editor
+  交付物：初稿、編輯稿、行銷文案、自我檢查報告
+  ↓ (交接檢查)
 
 Phase 3: 品質把關
   → article-analytics (≥8/10)
 
-通過 → 交付用戶
-未達標 → 退回對應階段
+通過 (≥8/10) → 交付用戶
+未達標 (7-7.9) → 建議修正
+退回 (<7/10) → 退回對應階段（記錄次數）
 ```
 
 ## 強制遵守的規則
 
-### 1. 品質門檻 (`rules/quality-gate.md`)
+### 核心品質規範
 
-- 所有內容必須達到 8/10 分以上
-- 評分維度：受眾吸引力、擴散力、平台適配度
-- 未達標必須退回修正
+1. **品質門檻** (`rules/quality-gate.md`)
+   - 所有內容必須達到 8/10 分以上
+   - 評分維度：受眾吸引力、擴散力、平台適配度
+   - 未達標必須退回修正
 
-### 2. 內容誠信 (`rules/content-integrity.md`)
+2. **內容誠信** (`rules/content-integrity.md`)
+   - ❌ 絕對禁止編造場景、故事、對話、經驗
+   - ✅ 所有具體細節必須來自用戶素材
+   - ✅ 沒有素材時標註留白或用技術事實
 
-- ❌ 絕對禁止編造場景、故事、對話、經驗
-- ✅ 所有具體細節必須來自用戶素材
-- ✅ 沒有素材時標註留白或用技術事實
+### 協作流程規範
 
-### 3. 去 AI 味 (`skills/anti-ai-writing/SKILL.md`)
+3. **交接協議** (`rules/handoff-protocol.md`)
+   - Phase 1 → Phase 2 交付物檢查清單
+   - Phase 2 → Phase 3 交付物檢查清單
+   - 交接確認機制
 
-禁用句型：
-- 「不是...而是...」「在某種程度上」
-- 「總的來說」「讓我們共同期待」
-- 「多維度」「賦能」「範式轉換」
+4. **退回修正協議** (`rules/revision-protocol.md`)
+   - 退回觸發條件（< 7/10 強制退回）
+   - 修正責任歸屬與期限
+   - 退回次數管理（最多 3 次）
+   - 重新審核機制
+
+### 寫作品質規範
+
+5. **去 AI 味** (`skills/anti-ai-writing/SKILL.md`)
+   - 禁用句型：「不是...而是...」「在某種程度上」
+   - 禁用結尾：「總的來說」「讓我們共同期待」
+   - 禁用術語：「多維度」「賦能」「範式轉換」
 
 ## 共用資源
 
@@ -101,13 +121,26 @@ Task(
 - 遵循 `md-generation-standard`（如有）
 - 檔案命名使用 kebab-case
 
+## 遵循的規範（Rules）
+
+### 品質與誠信
+- **`quality-gate.md`**：品質門檻標準（≥8/10）
+- **`content-integrity.md`**：內容誠信規則（禁止編造）
+
+### 流程與協作
+- **`handoff-protocol.md`**：階段交接協議
+- **`revision-protocol.md`**：退回修正協議
+
+---
+
 ## 版本資訊
 
-- **版本**：v2.0
+- **版本**：v2.1
 - **建立日期**：2026-02-10
+- **更新日期**：2026-02-13
 - **維護者**：ArticleWorld Team
 - **專案位置**：`/Users/paul_huang/AgentProjects/ArticleWorld`
 
 ---
 
-**重要提醒**：本團隊所有成員必須嚴格遵守 `rules/quality-gate.md` 和 `rules/content-integrity.md`。品質與誠信是我們的核心價值，不可妥協。
+**重要提醒**：本團隊所有成員必須嚴格遵守所有 rules。品質與誠信是我們的核心價值，流程規範確保高效協作，不可妥協。
